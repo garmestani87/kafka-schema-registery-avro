@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: SAMPLE-APP
+server:
+  port: 8080
+
+---
+kafka:
+  bootstrap-servers: kafka_1:port,kafka_2:port,kafka_3:port
+  schema:
+    registry:
+      url: http://schema_registery_url:port
